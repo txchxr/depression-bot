@@ -1,9 +1,10 @@
 import discord
+from config import settings
 from discord.ext import commands
 from discord import Activity, ActivityType
 
 VERSION = '0.1'
-TOKEN = 'NzgzODIxMjE0NDc2Nzk1OTM1.X8gUZA.JBVVmOwUOKX-HvBhtLnh38rrthk'
+TOKEN = settings['token']
 bot = commands.Bot(command_prefix='!')
 @bot.command()
 async def скажи(ctx, arg)
